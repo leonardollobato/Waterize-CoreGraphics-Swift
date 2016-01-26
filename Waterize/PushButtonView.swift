@@ -23,13 +23,13 @@ class PushButtonView: UIButton {
         /* grossura da Linha*/
         let plusLineThick:CGFloat = 3.0
         
-        /* 
-            PONTO B (x)
+        /*
+        PONTO B (x)
         
-           - pega 60% da altura ou largura (o que for menor) - Para manter a proporção (60p)
-            
-            *bounds.height: altura do contexto aonde o gráfico é criado - área (100p)
-            *bounds.width:  comprimento do contexto aonde o gráfico é criado - área (100p)
+        - pega 60% da altura ou largura (o que for menor) - Para manter a proporção (60p)
+        
+        *bounds.height: altura do contexto aonde o gráfico é criado - área (100p)
+        *bounds.width:  comprimento do contexto aonde o gráfico é criado - área (100p)
         */
         let plusWidth:CGFloat = min(bounds.width, bounds.height) * 0.6
         
@@ -43,26 +43,26 @@ class PushButtonView: UIButton {
         /* HORIZONTAL */
         
         /*
-            Horizontal PONTO A (20,50)
+        Horizontal PONTO A (20,50)
         
-            x = (bounds.width[100]- plusWidth[60])/÷ 2
-            y = bounds.height ÷ 2
+        x = (bounds.width[100]- plusWidth[60])/÷ 2
+        y = bounds.height ÷ 2
         
-            *bounds.height: altura do contexto aonde o gráfico é criado - área (100p)
-            *bounds.width:  comprimento do contexto aonde o gráfico é criado - área (100p)
+        *bounds.height: altura do contexto aonde o gráfico é criado - área (100p)
+        *bounds.width:  comprimento do contexto aonde o gráfico é criado - área (100p)
         */
         plusPath.moveToPoint(
             CGPoint(x: ((bounds.width - plusWidth)/2)+0.5, y: (bounds.height/2)+0.5)
         )
         
         /*
-            Horizontal PONTO B (80,50)
+        Horizontal PONTO B (80,50)
         
-            x = (bounds.width[100]+ plusWidth[60])/÷ 2
-            y = bounds.height ÷ 2
+        x = (bounds.width[100]+ plusWidth[60])/÷ 2
+        y = bounds.height ÷ 2
         
-            *bounds.height: altura do contexto aonde o gráfico é criado - área (100p)
-            *bounds.width:  comprimento do contexto aonde o gráfico é criado - área (100p)
+        *bounds.height: altura do contexto aonde o gráfico é criado - área (100p)
+        *bounds.width:  comprimento do contexto aonde o gráfico é criado - área (100p)
         */
         plusPath.addLineToPoint(
             CGPoint(x: ((bounds.width + plusWidth)/2)+0.5, y: (bounds.height/2)+0.5)
@@ -77,26 +77,26 @@ class PushButtonView: UIButton {
         
         if isAddButton {
             /*
-                Vertical PONTO A (20,50)
+            Vertical PONTO A (20,50)
             
-                x = (bounds.width[100]- plusWidth[60])/÷ 2
-                y = bounds.height ÷ 2
+            x = (bounds.width[100]- plusWidth[60])/÷ 2
+            y = bounds.height ÷ 2
             
-                *bounds.height: altura do contexto aonde o gráfico é criado - área (100p)
-                *bounds.width:  comprimento do contexto aonde o gráfico é criado - área (100p)
+            *bounds.height: altura do contexto aonde o gráfico é criado - área (100p)
+            *bounds.width:  comprimento do contexto aonde o gráfico é criado - área (100p)
             */
             plusPath.moveToPoint(
                 CGPoint(x: (bounds.width/2)+0.5, y: ((bounds.height - plusWidth)/2)+0.5)
             )
             
             /*
-                Vertical PONTO B (80,50)
+            Vertical PONTO B (80,50)
             
-                x = (bounds.width[100]+ plusWidth[60])/÷ 2
-                y = bounds.height ÷ 2
+            x = (bounds.width[100]+ plusWidth[60])/÷ 2
+            y = bounds.height ÷ 2
             
-                *bounds.height: altura do contexto aonde o gráfico é criado - área (100p)
-                *bounds.width:  comprimento do contexto aonde o gráfico é criado - área (100p)
+            *bounds.height: altura do contexto aonde o gráfico é criado - área (100p)
+            *bounds.width:  comprimento do contexto aonde o gráfico é criado - área (100p)
             */
             plusPath.addLineToPoint(
                 CGPoint(x: (bounds.width/2)+0.5, y: ((bounds.height + plusWidth)/2)+0.5)
@@ -104,8 +104,8 @@ class PushButtonView: UIButton {
         }
         
         /*
-            1.determina a cor do traço
-            2.traça a linha
+        1.determina a cor do traço
+        2.traça a linha
         */
         UIColor.whiteColor().setStroke()
         plusPath.stroke()

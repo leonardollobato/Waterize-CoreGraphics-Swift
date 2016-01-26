@@ -23,7 +23,7 @@ class CounterView: UIView {
     }
     @IBInspectable var outlineColor: UIColor = UIColor.blueColor()
     @IBInspectable var counterColor: UIColor = UIColor.orangeColor()
-
+    
     override func drawRect(rect: CGRect) {
         
         let center = CGPoint(x: bounds.width/2, y: bounds.height/2)
@@ -32,7 +32,7 @@ class CounterView: UIView {
         let startAngle:CGFloat = 3 * π / 4
         let endAngle:CGFloat = π / 4
         
-        print(radius)
+        //print(radius)
         
         let path = UIBezierPath(arcCenter: center,
             radius: radius - (arcWidth/2),
@@ -49,15 +49,11 @@ class CounterView: UIView {
         let arcLengthPerGlass = angleDifference / CGFloat(noOfGlasses)
         let outlineEndAngle = arcLengthPerGlass * CGFloat(counter) + startAngle
         
-        print(angleDifference)
-        print(arcLengthPerGlass)
-        print(outlineEndAngle)
-        
         let outlinePath = UIBezierPath(arcCenter: center,
-                                       radius: radius - 2.5,
-                                       startAngle: startAngle,
-                                       endAngle: outlineEndAngle,
-                                       clockwise: true)
+            radius: radius - 2.5,
+            startAngle: startAngle,
+            endAngle: outlineEndAngle,
+            clockwise: true)
         
         
         outlinePath.addArcWithCenter(center,
@@ -65,7 +61,7 @@ class CounterView: UIView {
             startAngle: outlineEndAngle,
             endAngle: startAngle,
             clockwise: false)
-
+        
         
         outlinePath.closePath()
         
@@ -73,9 +69,9 @@ class CounterView: UIView {
         outlinePath.lineWidth = 5.0
         outlinePath.stroke()
         
-   
+        
         
     }
     
-
+    
 }

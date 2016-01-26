@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A73DB92E1C57356300111DCD /* CounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73DB92D1C57356300111DCD /* CounterView.swift */; };
+		A77751431C5764F900C590B8 /* GraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77751421C5764F900C590B8 /* GraphView.swift */; };
 		A79A6D571C570E1E00D50994 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79A6D561C570E1E00D50994 /* AppDelegate.swift */; };
 		A79A6D591C570E1E00D50994 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79A6D581C570E1E00D50994 /* ViewController.swift */; };
 		A79A6D5C1C570E1E00D50994 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A79A6D5A1C570E1E00D50994 /* Main.storyboard */; };
@@ -37,6 +38,7 @@
 
 /* Begin PBXFileReference section */
 		A73DB92D1C57356300111DCD /* CounterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CounterView.swift; sourceTree = "<group>"; };
+		A77751421C5764F900C590B8 /* GraphView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphView.swift; sourceTree = "<group>"; };
 		A79A6D531C570E1E00D50994 /* Waterize.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Waterize.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A79A6D561C570E1E00D50994 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A79A6D581C570E1E00D50994 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 				A79A6D621C570E1E00D50994 /* Info.plist */,
 				A79A6D841C570E7700D50994 /* PushButtonView.swift */,
 				A73DB92D1C57356300111DCD /* CounterView.swift */,
+				A77751421C5764F900C590B8 /* GraphView.swift */,
 			);
 			path = Waterize;
 			sourceTree = "<group>";
@@ -262,6 +265,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A77751431C5764F900C590B8 /* GraphView.swift in Sources */,
 				A79A6D591C570E1E00D50994 /* ViewController.swift in Sources */,
 				A79A6D851C570E7700D50994 /* PushButtonView.swift in Sources */,
 				A79A6D571C570E1E00D50994 /* AppDelegate.swift in Sources */,
